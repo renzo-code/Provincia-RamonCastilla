@@ -1,13 +1,11 @@
 window.addEventListener('scroll', function(){
   let animacion = document.getElementById('mapa')
-  let flecha2 = document.getElementById('flecha2')
+  let mapaSF = document.getElementById('mapa-sinFondo')
   let flecha3 = document.getElementById('flecha3')
   let AIDESEP = document.getElementById('AIDESEP')
   let AIDESEP2 = document.getElementById('AIDESEP2')
   let FECOTYBA = document.getElementById('FECOTYBA')
   let FECOTYBA2 = document.getElementById('FECOTYBA2')
-  let COMUNIDADES = document.getElementById('COMUNIDADES')
-  let COMUNIDADES2 = document.getElementById('COMUNIDADES2')
   let FFAA = document.getElementById('FFAA')
   let IGLESIAS = document.getElementById('IGLESIAS')
   let DEVIDA = document.getElementById('DEVIDA')
@@ -15,25 +13,45 @@ window.addEventListener('scroll', function(){
   let FREPAP = document.getElementById('FREPAP')
   let FREPAP2 = document.getElementById('FREPAP2')
   let PNP = document.getElementById('PNP')
-  let ALCALDIA = document.getElementById('ALCALDIA')
-  let ALCALDIA2 = document.getElementById('ALCALDIA2')
+  let PNP2 = document.getElementById('PNP2')
   let DIRANDRO = document.getElementById('DIRANDRO')
-  let AEMINPU = document.getElementById('AEMINPU')
-  let AEMINPU2 = document.getElementById('AEMINPU2')
-  
+
+  let ORPIOROJO = document.getElementById('i-orpio-r')
+  let ORPIOBLANCO = document.getElementById('i-orpio-b')
+  let AIDESEPROJO = document.getElementById('i-aidesep-r')
+  let AIDESEPBLANCO = document.getElementById('i-aidesep-b')
+  let FECOTYBAROJO = document.getElementById('i-fecotyba-r')
+  let FECOTYBABLANCO = document.getElementById('i-fecotyba-b')
+  let COMUNIDADESROJO = document.getElementById('i-comunidades-r')
+  let COMUNIDADESBLANCO = document.getElementById('i-comunidades-b')
+  let FFAAROJO = document.getElementById('i-ffaa-r')
+  let FFAABLANCO = document.getElementById('i-ffaa-b')
+  let IGLESIASROJO = document.getElementById('i-iglesias-r')
+  let IGLESIASBLANCO = document.getElementById('i-iglesias-b')
+  let DEVIDAROJO = document.getElementById('i-devida-r')
+  let DEVIDABLANCO = document.getElementById('i-devida-b')
+  let FREPAPROJO = document.getElementById('i-frepap-r')
+  let FREPAPBLANCO = document.getElementById('i-frepap-b')
+  let PNPROJO = document.getElementById('i-pnp-r')
+  let PNPBLANCO = document.getElementById('i-pnp-b')
+  let ALCALDIAROJO = document.getElementById('i-alcaldia-r')
+  let ALCALDIABLANCO = document.getElementById('i-alcaldia-b')
+  let DIRANDROROJO = document.getElementById('i-dirandro-r')
+  let DIRANDROBLANCO = document.getElementById('i-dirandro-b')
+  let AEMINPUROJO = document.getElementById('i-aeminpu-r')
+  let AEMINPUBLANCO = document.getElementById('i-aeminpu-b')
   let posicionObj1 = animacion.getBoundingClientRect().top
   console.log(posicionObj1)
   let tamañoDePantalla = window.innerHeight/5;
+
   if(posicionObj1 < tamañoDePantalla){
     animacion.style.display = 'none'
-    flecha2.style.display = 'block'
+    mapaSF.style.display = 'block'
     flecha3.style.display = 'block'
     AIDESEP.style.display = 'block'
     AIDESEP2.style.display = 'block'
     FECOTYBA.style.display = 'block'
     FECOTYBA2.style.display = 'block'
-    COMUNIDADES.style.display = 'block'
-    COMUNIDADES2.style.display = 'block'
     FFAA.style.display = 'block'
     IGLESIAS.style.display = 'block'
     DEVIDA.style.display = 'block'
@@ -41,10 +59,32 @@ window.addEventListener('scroll', function(){
     FREPAP.style.display = 'block'
     FREPAP2.style.display = 'block'
     PNP.style.display = 'block'
-    ALCALDIA.style.display = 'block'
-    ALCALDIA2.style.display = 'block'
+    PNP2.style.display = 'block'
     DIRANDRO.style.display = 'block'
-    AEMINPU.style.display = 'block'
-    AEMINPU2.style.display = 'block'
+
+    ORPIOROJO.style.display = 'block'
+    ORPIOBLANCO.style.display = 'none'
+    AIDESEPROJO.style.display = 'block'
+    AIDESEPBLANCO.style.display = 'none'
+    FECOTYBAROJO.style.display = 'block'
+    FECOTYBABLANCO.style.display = 'none'
+    COMUNIDADESROJO.style.display = 'block'
+    COMUNIDADESBLANCO.style.display = 'none'
+    FFAAROJO.style.display = 'block'
+    FFAABLANCO.style.display = 'none'
+    IGLESIASROJO.style.display = 'block'
+    IGLESIASBLANCO.style.display = 'none'
+    DEVIDAROJO.style.display = 'block'
+    DEVIDABLANCO.style.display = 'none'
+    FREPAPROJO.style.display = 'block'
+    FREPAPBLANCO.style.display = 'none'
+    PNPROJO.style.display = 'block'
+    PNPBLANCO.style.display = 'none'
+    ALCALDIAROJO.style.display = 'block'
+    ALCALDIABLANCO.style.display = 'none'
+    DIRANDROROJO.style.display = 'block'
+    DIRANDROBLANCO.style.display = 'none'
+    AEMINPUROJO.style.display = 'block'
+    AEMINPUBLANCO.style.display = 'none'
   }
 })
