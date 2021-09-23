@@ -1,90 +1,62 @@
 window.addEventListener('scroll', function(){
   let animacion = document.getElementById('mapa')
-  let mapaSF = document.getElementById('mapa-sinFondo')
-  let flecha3 = document.getElementById('flecha3')
-  let AIDESEP = document.getElementById('AIDESEP')
-  let AIDESEP2 = document.getElementById('AIDESEP2')
-  let FECOTYBA = document.getElementById('FECOTYBA')
-  let FECOTYBA2 = document.getElementById('FECOTYBA2')
-  let FFAA = document.getElementById('FFAA')
-  let IGLESIAS = document.getElementById('IGLESIAS')
-  let DEVIDA = document.getElementById('DEVIDA')
-  let DEVIDA2 = document.getElementById('DEVIDA2')
-  let FREPAP = document.getElementById('FREPAP')
-  let FREPAP2 = document.getElementById('FREPAP2')
-  let PNP = document.getElementById('PNP')
-  let PNP2 = document.getElementById('PNP2')
-  let DIRANDRO = document.getElementById('DIRANDRO')
+  let R1 = document.getElementById('r1')
+  let R2 = document.getElementById('r2')
+  let R3 = document.getElementById('r3')
+  let R4 = document.getElementById('r4')
+  let R5 = document.getElementById('r5')
 
-  let ORPIOROJO = document.getElementById('i-orpio-r')
-  let ORPIOBLANCO = document.getElementById('i-orpio-b')
-  let AIDESEPROJO = document.getElementById('i-aidesep-r')
-  let AIDESEPBLANCO = document.getElementById('i-aidesep-b')
-  let FECOTYBAROJO = document.getElementById('i-fecotyba-r')
-  let FECOTYBABLANCO = document.getElementById('i-fecotyba-b')
-  let COMUNIDADESROJO = document.getElementById('i-comunidades-r')
-  let COMUNIDADESBLANCO = document.getElementById('i-comunidades-b')
-  let FFAAROJO = document.getElementById('i-ffaa-r')
-  let FFAABLANCO = document.getElementById('i-ffaa-b')
-  let IGLESIASROJO = document.getElementById('i-iglesias-r')
-  let IGLESIASBLANCO = document.getElementById('i-iglesias-b')
-  let DEVIDAROJO = document.getElementById('i-devida-r')
-  let DEVIDABLANCO = document.getElementById('i-devida-b')
-  let FREPAPROJO = document.getElementById('i-frepap-r')
-  let FREPAPBLANCO = document.getElementById('i-frepap-b')
-  let PNPROJO = document.getElementById('i-pnp-r')
-  let PNPBLANCO = document.getElementById('i-pnp-b')
-  let ALCALDIAROJO = document.getElementById('i-alcaldia-r')
-  let ALCALDIABLANCO = document.getElementById('i-alcaldia-b')
-  let DIRANDROROJO = document.getElementById('i-dirandro-r')
-  let DIRANDROBLANCO = document.getElementById('i-dirandro-b')
-  let AEMINPUROJO = document.getElementById('i-aeminpu-r')
-  let AEMINPUBLANCO = document.getElementById('i-aeminpu-b')
+  let SC1 = document.getElementById('sc1')
+  let SC2 = document.getElementById('sc2')
+
+  let C1 = document.getElementById('c1')
+  let C2 = document.getElementById('c2')
+  let C3 = document.getElementById('c3')
+
+  let SR1 = document.getElementById('sr1')
+
+  let M1 = document.getElementById('medico1')
+  let M2 = document.getElementById('medico2')
+  let M3 = document.getElementById('medico3')
+  let M4 = document.getElementById('medico4')
+  let M5 = document.getElementById('medico5')
+  let M6 = document.getElementById('medico6')
+  let M7 = document.getElementById('medico7')
+  let M8 = document.getElementById('medico8')
+  let M9 = document.getElementById('medico9')
+  let M10 = document.getElementById('medico10')
+  
   let posicionObj1 = animacion.getBoundingClientRect().top
   console.log(posicionObj1)
   let tamañoDePantalla = window.innerHeight/5;
 
   if(posicionObj1 < tamañoDePantalla){
-    animacion.style.display = 'none'
-    mapaSF.style.display = 'block'
-    flecha3.style.display = 'block'
-    AIDESEP.style.display = 'block'
-    AIDESEP2.style.display = 'block'
-    FECOTYBA.style.display = 'block'
-    FECOTYBA2.style.display = 'block'
-    FFAA.style.display = 'block'
-    IGLESIAS.style.display = 'block'
-    DEVIDA.style.display = 'block'
-    DEVIDA2.style.display = 'block'
-    FREPAP.style.display = 'block'
-    FREPAP2.style.display = 'block'
-    PNP.style.display = 'block'
-    PNP2.style.display = 'block'
-    DIRANDRO.style.display = 'block'
+    R1.style.display = 'none'
+    R2.style.display = 'none'
+    R3.style.display = 'none'
+    R4.style.display = 'none'
+    R5.style.display = 'none'
 
-    ORPIOROJO.style.display = 'block'
-    ORPIOBLANCO.style.display = 'none'
-    AIDESEPROJO.style.display = 'block'
-    AIDESEPBLANCO.style.display = 'none'
-    FECOTYBAROJO.style.display = 'block'
-    FECOTYBABLANCO.style.display = 'none'
-    COMUNIDADESROJO.style.display = 'block'
-    COMUNIDADESBLANCO.style.display = 'none'
-    FFAAROJO.style.display = 'block'
-    FFAABLANCO.style.display = 'none'
-    IGLESIASROJO.style.display = 'block'
-    IGLESIASBLANCO.style.display = 'none'
-    DEVIDAROJO.style.display = 'block'
-    DEVIDABLANCO.style.display = 'none'
-    FREPAPROJO.style.display = 'block'
-    FREPAPBLANCO.style.display = 'none'
-    PNPROJO.style.display = 'block'
-    PNPBLANCO.style.display = 'none'
-    ALCALDIAROJO.style.display = 'block'
-    ALCALDIABLANCO.style.display = 'none'
-    DIRANDROROJO.style.display = 'block'
-    DIRANDROBLANCO.style.display = 'none'
-    AEMINPUROJO.style.display = 'block'
-    AEMINPUBLANCO.style.display = 'none'
+    SC1.style.display = 'none'
+    SC2.style.display = 'none'
+
+    C1.style.display = 'none'
+    C2.style.display = 'none'
+    C3.style.display = 'none'
+
+    SR1.style.display = 'none'
+
+    M1.style.display = 'block'
+    M2.style.display = 'block'
+    M3.style.display = 'block'
+    M4.style.display = 'block'
+    M5.style.display = 'block'
+    M6.style.display = 'block'
+    M7.style.display = 'block'
+    M8.style.display = 'block'
+    M9.style.display = 'block'
+    M10.style.display = 'block'
+
+    AIDESEP.style.display = 'block'
   }
 })
